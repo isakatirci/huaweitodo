@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huawei.Todo.WPF", "Huawei.Todo.WPF\Huawei.Todo.WPF.csproj", "{A7E51090-3942-4AD0-8937-810256817147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huawei.ToDo.Entities", "Huawei.ToDo.Entities\Huawei.ToDo.Entities.csproj", "{F244A566-A0F8-4D6F-A11D-085485726799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huawei.ToDo.Repository", "Huawei.ToDo.Repository\Huawei.ToDo.Repository.csproj", "{3B902096-A41A-487D-9525-80848283B2E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huawei.ToDo.Service", "Huawei.ToDo.Service\Huawei.ToDo.Service.csproj", "{7199D6E9-E120-4E66-B4B6-37582BA9A687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huawei.Todo.UnitTest", "Huawei.Todo.UnitTest\Huawei.Todo.UnitTest.csproj", "{98FBE084-03D6-425F-BE7B-D6D8EA5CD305}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7E51090-3942-4AD0-8937-810256817147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E51090-3942-4AD0-8937-810256817147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E51090-3942-4AD0-8937-810256817147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E51090-3942-4AD0-8937-810256817147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F244A566-A0F8-4D6F-A11D-085485726799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F244A566-A0F8-4D6F-A11D-085485726799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F244A566-A0F8-4D6F-A11D-085485726799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F244A566-A0F8-4D6F-A11D-085485726799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B902096-A41A-487D-9525-80848283B2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B902096-A41A-487D-9525-80848283B2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B902096-A41A-487D-9525-80848283B2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B902096-A41A-487D-9525-80848283B2E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7199D6E9-E120-4E66-B4B6-37582BA9A687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7199D6E9-E120-4E66-B4B6-37582BA9A687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7199D6E9-E120-4E66-B4B6-37582BA9A687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7199D6E9-E120-4E66-B4B6-37582BA9A687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FBE084-03D6-425F-BE7B-D6D8EA5CD305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FBE084-03D6-425F-BE7B-D6D8EA5CD305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FBE084-03D6-425F-BE7B-D6D8EA5CD305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FBE084-03D6-425F-BE7B-D6D8EA5CD305}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38CBAE42-E8A4-4DB9-8526-8EF4B51284F1}
+	EndGlobalSection
+EndGlobal
