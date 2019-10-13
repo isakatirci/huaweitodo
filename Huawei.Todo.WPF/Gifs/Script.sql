@@ -1,0 +1,61 @@
+﻿USE [ToDo]
+GO
+/****** Object:  Table [dbo].[ToDoList]    Script Date: 13.10.2019 21:28:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ToDoList](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[UserId] [int] NULL,
+	[Name] [nvarchar](max) NULL,
+ CONSTRAINT [PK_ToDoList] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[TodoListItem]    Script Date: 13.10.2019 21:28:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TodoListItem](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[ToDoListId] [int] NOT NULL,
+	[Name] [nvarchar](max) NULL,
+	[Description] [nvarchar](max) NULL,
+	[Deadline] [datetime2](7) NULL,
+	[Status] [nvarchar](max) NULL,
+	[CreateDate] [datetime2](7) NULL,
+ CONSTRAINT [PK_TodoListItem] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[User]    Script Date: 13.10.2019 21:28:20 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[User](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Email] [nvarchar](max) NULL,
+	[Password] [nvarchar](max) NULL,
+ CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[ToDoList]  WITH CHECK ADD  CONSTRAINT [FK_ToDoList_User] FOREIGN KEY([UserId])
+REFERENCES [dbo].[User] ([Id])
+GO
+ALTER TABLE [dbo].[ToDoList] CHECK CONSTRAINT [FK_ToDoList_User]
+GO
+ALTER TABLE [dbo].[TodoListItem]  WITH CHECK ADD  CONSTRAINT [FK_TodoListItem_ToDoList] FOREIGN KEY([ToDoListId])
+REFERENCES [dbo].[ToDoList] ([Id])
+GO
+ALTER TABLE [dbo].[TodoListItem] CHECK CONSTRAINT [FK_TodoListItem_ToDoList]
+GO

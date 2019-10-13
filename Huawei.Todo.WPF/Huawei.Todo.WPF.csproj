@@ -154,6 +154,15 @@
   <ItemGroup>
     <Folder Include="Views\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gifs\#1 Testing.gif" />
+    <Resource Include="Gifs\#2 Registering.gif" />
+    <Resource Include="Gifs\#3 Log in.gif" />
+    <Resource Include="Gifs\#4 To Do Adding.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gifs\Script.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
